@@ -8,7 +8,7 @@
 //    and F (below 60).
 // 2) Include the score in the output so students see what was graded.
 // Example outputs to mirror:
-// - Input: 95 -> "Score 95: A - Excellent!"
+// - Input: 95 -> "Score 95: A - !"
 // - Input: 73 -> "Score 73: C - Keep practicing."
 // - Input: 42 -> "Score 42: F - Needs more study."
 // Hint: check the highest scores first so lower ranges do not run too early.
@@ -19,6 +19,20 @@ int main(void) {
     scanf("%d", &score);
 
     // Insert your if/else-if/else chain here.
-
+if (score >= 90 && score <= 100 ) {
+    printf("Score %d: A- Excellence\n ", score);
+}
+else if (score >= 80 && score <= 89 ){
+    printf("Score %d: B- Good\n ", score);
+}
+else if (score >= 70 && score <= 79){
+    printf("Score %d: C- Keep practicing\n ", score);
+}
+else if (score >= 60 && score <= 69){
+    printf("Score %d: D- Bad\n ", score);
+}
+else {
+     printf("Score %d: F- Awful\n ", score);
+}
     return 0;
 }
